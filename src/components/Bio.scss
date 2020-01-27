@@ -1,0 +1,14 @@
+@import './_globals.scss';
+
+.bio-list {
+border-color: map-get($palette, text);
+    border-width: 5px;
+}
+
+.bio-div {
+    background: map-get($palette, emphasis);
+    color: map-get($palette, text);
+    display: block;
+    padding: 10px;
+    font-size: larger;
+}
