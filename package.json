@@ -8,6 +8,7 @@
     "build": "webpack -p",
     "check": "tsc",
     "lint": "tslint src/*.ts{,x} src/**/*.ts{,x}",
+    "lint-fix": "tslint --fix src/*.ts{,x} src/**/*.ts{,x}",
     "start": "webpack-dev-server --inline"
   },
   "keywords": [
