@@ -12,6 +12,9 @@ export function Bio() {
             <div class="bio-div">
                 <a href="https://github.com/hoane">Github</a>
             </div>
+            <div class="bio-div">
+                <a href="https://github.com/hoane/inferno-typescript-website">This Site</a>
+            </div>
         </div>
     );
 }
