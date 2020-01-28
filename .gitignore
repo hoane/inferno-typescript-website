@@ -24,6 +24,7 @@ node_modules
 *.swp
 *~
 test/data/result.json
+*.code-workspace
 
 
 package-lock.json

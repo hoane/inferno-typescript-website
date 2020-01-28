@@ -17,7 +17,7 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.s[ac]ss$/i,
+				test: /\.s[ac]ss$/,
 				use: [
 					"style-loader", 						// creates style nodes from JS strings
 					"css-loader", 							// translates CSS into CommonJS
@@ -28,6 +28,16 @@ module.exports = {
 				test: /\.(js|jsx|tsx|ts)$/,   // All ts and tsx files will be process by
 				loaders: 'babel-loader',			// first babel-loader, then ts-loader
 				exclude: /node_modules/				// ignore node_modules
+			},
+			{
+				test: /\.ico$/,
+				loader: 'file-loader?name=[name].[ext]'
+			},
+			{
+				test: /\.(png|svg|jpg|gif)$/,
+				use: [
+					'file-loader'
+				]
 			}
 		]
 	},

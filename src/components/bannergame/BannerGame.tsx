@@ -1,6 +1,7 @@
 import { Component } from 'inferno';
 import * as BannerGameScript from './BannerGameScript';
 
+
 export class BannerGame extends Component {
    
     componentDidMount() {

@@ -1,3 +1,10 @@
+import cat_left from './assets/cat_left_1_29_23.png';
+import cat_right from './assets/cat_right_1_29_23.png';
+import cat_sit from './assets/cat_sit_1_29_23.png';
+import cat_sleep from './assets/cat_sleep_1_29_23.png';
+import heart_1 from './assets/heart_1_16_16.png';
+import heart_2 from'./assets/heart_2_16_16.png';
+
 /**
  * CANVAS STATE
  */
@@ -301,18 +308,18 @@ function loadCatEntity(w, h, petCallback) {
 	return new CatEntity(
 		new CanvasRect(10,h-23, 29, 23),
 		new CanvasRect(0, 0, w, h),
-		loadImage("assets/bannergame/cat_left_1_29_23.png"),
-		loadImage("assets/bannergame/cat_right_1_29_23.png"),
-		loadImage("assets/bannergame/cat_sit_1_29_23.png"),
-		loadImage("assets/bannergame/cat_sleep_1_29_23.png"),
+		loadImage(cat_left),
+		loadImage(cat_right),
+		loadImage(cat_sit),
+		loadImage(cat_sleep),
 		petCallback);
 }
 
 function loadHeartEntity() {
 	return new HeartEntity(
 		new CanvasRect(0, 0, 16, 16),
-		loadImage("assets/bannergame/heart_1_16_16.png"),
-		loadImage("assets/bannergame/heart_2_16_16.png"));
+		loadImage(heart_1),
+		loadImage(heart_2));
 }
 
 export function init() {
