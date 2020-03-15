@@ -1,8 +1,7 @@
 import { Component, render } from 'inferno';
-import { BannerGame } from './components/bannergame/BannerGame';
-import { Bio } from './components/Bio';
 import './favicon.ico';
 import './main.scss';
+import { NavBar } from "./components/navigation/NavBar";
 
 const container = document.getElementById('app');
 
@@ -15,9 +14,7 @@ class App extends Component<any, any> {
     public render() {
         return (
             <div>
-                <h1>{`Brandon Hoane's Website`}</h1>
-                <Bio />
-                <BannerGame/>
+                <NavBar/>
             </div>
         );
     }

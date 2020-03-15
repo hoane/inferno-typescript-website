@@ -1,0 +1,35 @@
+@import './src/components/_globals.scss';
+
+.container {
+}
+
+.nav-bar {
+    background-color: map-get($palette, text);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-button {
+    padding: 10px;
+}
+
+.nav-text {
+    color: map-get($palette, background);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: large
+}
+
+.nav-button:hover {
+    background-color: black;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: map-get($palette, text);
+}
