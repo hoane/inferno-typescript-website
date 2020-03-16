@@ -6,9 +6,9 @@ export interface NavButtonProps {
 }
 
 export const NavButton = (props: NavButtonProps) => (
-    <div class="nav-button">
         <Link to={props.link} class="nav-text">
-            {props.name}
+            <div class="nav-button">
+                {props.name}
+            </div>
         </Link>
-    </div>
 );
