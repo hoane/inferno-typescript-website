@@ -1,4 +1,4 @@
-import { Bio } from "../../Bio";
+import { Bio } from "./Bio";
 import { BannerGame } from "../../bannergame/BannerGame";
 
 export const HomePage = () => (
