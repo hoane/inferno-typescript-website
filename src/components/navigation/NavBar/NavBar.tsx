@@ -1,8 +1,12 @@
-import { BrowserRouter, Route } from 'inferno-router'
+import { BrowserRouter, Route, Switch } from 'inferno-router'
 import { HomePage } from "../../views/HomePage";
 import { GamesPage } from "../../views/GamesPage";
 import './syles.scss'
 import { NavButton } from "./NavButton";
+
+const NoMatchPage = () => (
+    <h1>404 Not Found</h1>
+);
 
 export const NavBar = () => (
     <BrowserRouter>
@@ -12,8 +16,11 @@ export const NavBar = () => (
                 <NavButton name="Games" link="/games"/>
             </div>
             <div class="content">
-                <Route exact path="/" component={ HomePage }/>
-                <Route path="/games" component={ GamesPage }/>
+                <Switch>
+                    <Route exact path="/" component={ HomePage }/>
+                    <Route path="/games" component={ GamesPage }/>
+                    <Route component={ NoMatchPage }/>
+                </Switch>
             </div>
         </div>
     </BrowserRouter>
