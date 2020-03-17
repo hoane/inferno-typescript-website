@@ -18,10 +18,11 @@
 		"skipLibCheck": true,
 		"noUnusedParameters": true,
 		"noImplicitReturns": true,
-		"noFallthroughCasesInSwitch": true,
+		"noFallthroughCasesInSwitch": true
 	},
 	"include": [
-		"src/**/*",
-		"node_modules/inferno/dist/index.d.ts"
-	]
+        "src/**/*",
+        "node_modules/inferno/dist/index.d.ts",
+        "node_modules/@types/node/globals.d.ts"
+    ]
 }

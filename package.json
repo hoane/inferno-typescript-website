@@ -18,12 +18,15 @@
   "author": "Brandon Hoane",
   "license": "MIT",
   "dependencies": {
+    "https": "^1.0.0",
     "inferno": "^7.2.0",
     "inferno-router": "^7.4.2"
   },
   "devDependencies": {
+    "@types/node": "^13.9.1",
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/plugin-transform-runtime": "^7.8.3",
     "@babel/preset-env": "7.5.5",
     "@babel/preset-typescript": "^7.3.3",
     "babel-loader": "^8.0.6",
